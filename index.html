@@ -16,13 +16,11 @@
     <!-- Slick -->
     <link rel="stylesheet" href="library/slick/slick-theme.css">
     <link rel="stylesheet" href="library/slick/slick.css">
-    <!-- AOS -->
-    <link rel="stylesheet" href="library/aos/aos.css">
     <!-- Icon -->
-    <link rel="stylesheet" href="library/boxicons-2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="library/boxicons/css/boxicons.min.css">
 </head>
 <body>
-    <section class="hero is-dark is-fullheight fertolio-hero">
+    <section class="hero is-dark is-fullheight fertolio-hero" id="home">
         <div class="hero-head">
             <header class="navbar is-spaced">
                 <div class="container">
@@ -38,19 +36,19 @@
                     </div>
                     <div id="navbarMenuHeroC" class="navbar-menu">
                         <div class="navbar-end">
-                            <a class="navbar-item">
+                            <a href="#home" class="navbar-item">
                                 Home
                             </a>
-                            <a class="navbar-item">
+                            <a href="#about" class="navbar-item">
                                 About
                             </a>
-                            <a class="navbar-item">
+                            <a href="#service" class="navbar-item">
                                 Service
                             </a>
-                            <a class="navbar-item">
+                            <a href="#portfolio" class="navbar-item">
                                 Portfolio
                             </a>
-                            <a class="navbar-item">
+                            <a href="#contact" class="navbar-item">
                                 Contact
                             </a>
                         </div>
@@ -73,7 +71,8 @@
                                 inventore teneturconsequatur saepe quaerat accusantium autem ullam dolores eveniet.
                             </p>
                             <div class="buttons fertolio-hero-cta">
-                                <a href="#" class="button fertolio-primary-button">
+                                <a href="mailto:yourmail@gmail.com?subject=Work%20Opportunity&body=Hello%20Your%20Name."
+                                    class="button fertolio-primary-button" target="_blank">
                                     Hire Me
                                 </a>
                                 <a href="#" class="button fertolio-second-button" download>
@@ -88,7 +87,7 @@
     </section>
 
     <!-- Section About -->
-    <section class="section">
+    <section class="section" id="about">
         <div class="container">
             <div class="columns is-centered">
                 <div class="column is-4">
@@ -100,7 +99,7 @@
                             <i class='bx bx-brightness' ></i>
                         </div>
                         <p class="fertolio-section-subtitle">
-                            Here's a little glimpse about me
+                            Here's a little glimpse about me.
                         </p>
                     </div>
                 </div>
@@ -111,7 +110,7 @@
                     <div class="tile is-child">
                         <div class="fertolio-content-about fertolio-content-about-mr">
                             <div class="content-about-icon">
-                                <i class='bx bx-cookie'></i>
+                                <i class='bx bxs-hot'></i>
                             </div>
                             <div>
                                 <h3 class="fertolio-content-about-title">Passionate</h3>
@@ -126,7 +125,7 @@
                     <div class="tile is-child">
                         <div class="fertolio-content-about fertolio-content-about-mr">
                             <div class="content-about-icon">
-                                <i class='bx bx-cookie'></i>
+                                <i class='bx bx-run'></i>
                             </div>
                             <div>
                                 <h3 class="fertolio-content-about-title">Hardworker</h3>
@@ -141,7 +140,7 @@
                     <div class="tile is-child">
                         <div class="fertolio-content-about fertolio-content-about-mr">
                             <div class="content-about-icon">
-                                <i class='bx bx-cookie'></i>
+                                <i class='bx bxs-heart'></i>
                             </div>
                             <div>
                                 <h3 class="fertolio-content-about-title">Caring</h3>
@@ -164,7 +163,7 @@
                     <div class="tile is-child">
                         <div class="fertolio-content-about fertolio-content-about-ml">
                             <div class="content-about-icon">
-                                <i class='bx bx-cookie'></i>
+                                <i class='bx bx-code-curly'></i>
                             </div>
                             <div>
                                 <h3 class="fertolio-content-about-title">Full Stack</h3>
@@ -179,7 +178,7 @@
                     <div class="tile is-child">
                         <div class="fertolio-content-about fertolio-content-about-ml">
                             <div class="content-about-icon">
-                                <i class='bx bx-cookie'></i>
+                                <i class='bx bxs-bullseye'></i>
                             </div>
                             <div>
                                 <h3 class="fertolio-content-about-title">Attention</h3>
@@ -194,7 +193,7 @@
                     <div class="tile is-child">
                         <div class="fertolio-content-about fertolio-content-about-ml">
                             <div class="content-about-icon">
-                                <i class='bx bx-cookie'></i>
+                                <i class='bx bx-wind'></i>
                             </div>
                             <div>
                                 <h3 class="fertolio-content-about-title">Faster</h3>
@@ -210,8 +209,8 @@
         </div>
     </section>
 
-    <!-- Section Pelayanan -->
-    <section class="section">
+    <!-- Section Services -->
+    <section class="section" id="service">
         <div class="container">
             <div class="columns is-centered">
                 <div class="column is-4">
@@ -223,7 +222,7 @@
                             <i class='bx bx-brightness' ></i>
                         </div>
                         <p class="fertolio-section-subtitle">
-                            What can i do to your works.
+                            The service what can i do for you.
                         </p>
                     </div>
                 </div>
@@ -324,7 +323,7 @@
     </section>
 
     <!-- Section Portfolio -->
-    <section class="section">
+    <section class="section" id="portfolio">
         <div class="container">
             <div class="columns is-centered">
                 <div class="column is-4">
@@ -336,7 +335,7 @@
                             <i class='bx bx-brightness' ></i>
                         </div>
                         <p class="fertolio-section-subtitle">
-                            My latest portfolio what i've done.
+                            My latest portfolio what i've done so far.
                         </p>
                     </div>
                 </div>
@@ -360,7 +359,7 @@
                                 </p>
                             </div>
                             <div>
-                                <a href="#" class="fertolio-portfolio-view">
+                                <a href="#" class="fertolio-portfolio-view" target="_blank">
                                     View Project
                                 </a>
                             </div>
@@ -385,7 +384,7 @@
                                 </p>
                             </div>
                             <div>
-                                <a href="#" class="fertolio-portfolio-view">
+                                <a href="#" class="fertolio-portfolio-view" target="_blank">
                                     View Project
                                 </a>
                             </div>
@@ -411,7 +410,7 @@
                                 </p>
                             </div>
                             <div>
-                                <a href="#" class="fertolio-portfolio-view">
+                                <a href="#" class="fertolio-portfolio-view" target="_blank">
                                     View Project
                                 </a>
                             </div>
@@ -436,7 +435,7 @@
                                 </p>
                             </div>
                             <div>
-                                <a href="#" class="fertolio-portfolio-view">
+                                <a href="#" class="fertolio-portfolio-view" target="_blank">
                                     View Project
                                 </a>
                             </div>
@@ -461,7 +460,7 @@
                                 </p>
                             </div>
                             <div>
-                                <a href="#" class="fertolio-portfolio-view">
+                                <a href="#" class="fertolio-portfolio-view" target="_blank">
                                     View Project
                                 </a>
                             </div>
@@ -486,7 +485,7 @@
                                 </p>
                             </div>
                             <div>
-                                <a href="#" class="fertolio-portfolio-view">
+                                <a href="#" class="fertolio-portfolio-view" target="_blank">
                                     View Project
                                 </a>
                             </div>
@@ -585,7 +584,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="hero fertolio-cta-hero">
+    <section class="hero fertolio-cta-hero" id="contact">
         <div class="hero-body">
             <div class="container">
                 <div class="columns is-centered">
@@ -612,19 +611,19 @@
         <div class="container">
             <div class="fertolio-footer-media">
                 <div>
-                    <a href="#" class="fertolio-social">
+                    <a href="#" class="fertolio-social" target="_blank">
                         <i class='bx bxl-youtube'></i>
                     </a>
 
-                    <a href="#" class="fertolio-social">
+                    <a href="#" class="fertolio-social" target="_blank">
                         <i class='bx bxl-facebook-circle'></i>
                     </a>
 
-                    <a href="#" class="fertolio-social">
+                    <a href="#" class="fertolio-social" target="_blank">
                         <i class='bx bxl-instagram'></i>
                     </a>
 
-                    <a href="#" class="fertolio-social">
+                    <a href="#" class="fertolio-social" target="_blank">
                         <i class='bx bxl-twitter' ></i>
                     </a>
                 </div>
@@ -632,31 +631,31 @@
                 <div>
                     <ul class="fertolio-footer-menu">
                         <li>
-                            <a href="#">
+                            <a href="#home">
                                 Home
                             </a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="#about">
                                 About
                             </a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="#services">
                                 Services
                             </a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="#portfolio">
                                 Portfolio
                             </a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="#contact">
                                 Contact
                             </a>
                         </li>
@@ -665,11 +664,12 @@
             </div>
             <div class="footer-divider"></div>
             <div class="fertolio-footer-attribution">
-                <div class="fertolio-footer-copyright">
-                    Copyright &copy; 2022 | Fertolio All Right Reserved
-                </div>
+                <p class="fertolio-footer-copyright">
+                    Copyright &copy; 2022 | Crafted with <i class="bx bxs-heart"></i>
+                    by <a href="https://facebook.com/fikisuleey" target="_blank">Fiqisulaiman</a>
+                </p>
                 <a href="#" class="fertolio-footer-btt">
-                    <ion-icon name="chevron-up-outline" class="chevron-up-icon"></ion-icon>
+                    <i class="bx bx-chevron-up"></i>
                     Back to Top
                 </a>
             </div>

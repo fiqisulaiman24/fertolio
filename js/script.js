@@ -45,10 +45,6 @@ $(document).ready(function() {
     ]
   });
 
-  AOS.init({
-    once: true,
-  })
-
   $(window).scroll(function () {
     if ($(this).scrollTop() > 600) {
       $(".fertolio-footer-btt").fadeIn();
