@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600&display=swap');
+/*
+ *  Root & UI Components
+ */
+:root{
+    /* Hex Color */
+    --ft-black: #0a0908;
+    --ft-dark-blue: #22333b;
+    --ft-white: #fbfaf5;
+    --ft-light-brown: #a9927d;
+}
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    background: var(--ft-white);
+    scroll-behavior: smooth;
+}
+a, button{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Halant', sans-serif;
+    margin: 0;
+}
+.section{
+    padding: 4rem 1.5rem;
+}
+.fertolio-section-heading{
+    position: relative;
+    text-align: center;
+    margin-bottom: 34px;
+}
+.fertolio-section-divider{
+    width: 142px;
+    height: 2px;
+    background: var(--ft-light-brown);
+    margin: 12px auto;
+    position: relative;
+    border-radius: 100px;
+}
+.fertolio-section-divider i{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 50%);
+    font-size: 26px;
+    color: var(--ft-light-brown);
+}
+.fertolio-section-title{
+    font-weight: 600;
+    font-size: 2.325em;
+    line-height: 34px;
+    position: relative;
+    color: var(--ft-dark-blue);
+}
+.fertolio-section-subtitle{
+    font-size: 1em;
+    color: var(--ft-black);
+}
+.button{
+    width: 9.5em;
+}
+.fertolio-primary-button{
+    padding: 20px 32px;
+    background: var(--ft-light-brown);
+    border: 1px solid var(--ft-light-brown);
+    color: var(--ft-white);
+    transition: .50s all;
+}
+.fertolio-primary-button:hover{
+    color: var(--ft-white);
+    border: 1px solid var(--ft-light-brown);
+}
+.fertolio-second-button{
+    padding: 20px 32px;
+    background: transparent;
+    border: 1px solid var(--ft-light-brown);
+    color: var(--ft-white);
+    transition: .50s all;
+}
+.fertolio-second-button:hover{
+    color: var(--ft-white);
+    background: var(--ft-light-brown);
+    border: 1px solid var(--ft-light-brown);
+}
+
+/*
+ *  Header & Hero
+ */
+.navbar-item.fertolio-logo:hover{
+    background: transparent !important;
+}
+.navbar-end .navbar-item,.navbar-link{
+    background: transparent;
+    padding: .5rem 1rem;
+    transition: background-color .50s;
+}
+.navbar-item img {
+    max-height: fit-content;
+}
+.navbar-brand, .navbar-tabs{
+    align-items: center;
+}
+.navbar-burger{
+    color: var(--ft-white);
+}
+.hero.is-dark.is-fullheight.fertolio-hero{
+    background: url("../images/background/Curve Line.svg");
+    background-size: cover;
+    position: relative;
+    border-bottom-left-radius: 10em;
+    border-bottom: 12px solid var(--ft-light-brown);
+}
+.hero.is-dark .navbar-link.is-active, .hero.is-dark .navbar-link:hover, .hero.is-dark a.navbar-item.is-active, .hero.is-dark a.navbar-item:hover {
+    background-color: var(--ft-light-brown);
+    color: #fff;
+    transition: background-color .50s;
+}
+.fertolio-hero-headline{
+    font-size: 4.625em;
+    font-weight: 600;
+    line-height: 88px;
+    color: var(--ft-white);
+}
+.fertolio-hero-headline span{
+    color: var(--ft-light-brown);
+}
+.fertolio-hero-tagline{
+    font-size: 1em;
+    line-height: 32px;
+    color: var(--ft-white);
+}
+.fertolio-hero-cta{
+    margin-top: 24px;
+}
+
+
+
+/*
+ *  About Section
+ */
+.tile.is-vertical>.tile.is-child:not(:last-child){
+    margin-bottom: 3rem !important;
+}
+.fertolio-content-about{
+    display: flex;
+    align-items: start;
+}
+.fertolio-content-about .content-about-icon{
+    margin: 0 8px;
+}
+.fertolio-content-about .content-about-icon i{
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--ft-light-brown);
+}
+.fertolio-content-about-title{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ft-dark-blue);
+}
+.fertolio-content-about-desc{
+    color: var(--ft-black);
+}
+.fertolio-photo{
+    border-radius: 4em;
+}
+.fertolio-content-about-mr{
+    margin-right: 2.5rem;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.fertolio-content-about-ml{
+    margin-left: 2.5rem;
+}
+
+
+
+/*
+ *  Service Section
+ */
+.fertolio-service-content{
+    text-align: center;
+    padding: 18px 26px; 
+    border-radius: 4px;
+    transform: translateY(0);
+}
+.fertolio-service-content:hover .fertolio-service-title{
+    color: var(--ft-light-brown);
+    transition: .75s all;
+}
+.fertolio-service-content:hover .service-icon i{
+    color: var(--ft-light-brown);
+    transition: .75s all;
+}
+.fertolio-service-content .service-icon i{
+    color: var(--ft-dark-blue);
+    font-size: 4rem;
+    transition: .75s all;
+}
+.fertolio-service-content .fertolio-service-title{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 6px 0;
+    color: var(--ft-dark-blue);
+    transition: .75s all;
+}
+.fertolio-service-content .fertolio-service-desc{
+    font-size: 1em;
+}
+
+
+/*
+ *  Portfolio Section
+ */
+.fertolio-portfolio-card{
+    position: relative;
+}
+.fertolio-portfolio-card .card-image:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    border-radius: 8px;
+}
+.portfolio-preview{
+    object-fit: cover;
+    border-radius: 8px;
+}
+.fertolio-portfolio-content{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 18px 22px;
+    color: var(--ft-white);
+}
+.fertolio-portfolio-content .fertolio-portfolio-name{
+    color: var(--ft-light-brown);
+    font-weight: 600;
+}
+.fertolio-portfolio-content .fertolio-portfolio-tag{
+    font-size: 14px;
+}
+.fertolio-portfolio-content .fertolio-portfolio-view{
+    font-weight: 300;
+    font-size: 12px;
+    color: var(--ft-white);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .75s all;
+}
+.fertolio-portfolio-view:hover{
+    transition: .75s all;
+    color: var(--ft-light-brown)
+}
+
+
+/*
+ *  Testimonials Section
+ */
+.fertolio-testimonials-content{
+    padding: 18px 22px;
+    background: var(--ft-dark-blue);
+    border-radius: 8px;
+}
+.fertolio-testimonials-content i{
+    font-size: 3rem;
+    margin-bottom: 8px;
+    color: var(--ft-light-brown);
+}
+.fertolio-testimonials-content .fertolio-testimonials-desc{
+    color: var(--ft-white);
+    margin-bottom: 18px;
+}
+.fertolio-testimonials-content .fertolio-testimonials-client{
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--ft-light-brown);
+    line-height: 22px;
+}
+.fertolio-testimonials-content .fertolio-testimonials-role{
+    color: var(--ft-white);
+    font-size: 14px;
+}
+
+/*
+ *  Call To Action
+ */
+.fertolio-cta-hero{
+    background: #22333b;
+    border-top-right-radius: 10em;
+    border-top: 12px solid #a9927d;
+}
+.fertolio-cta-content{
+    text-align: center;
+}
+.fertolio-cta-content img{
+    width: 56px;
+}
+.fertolio-cta-headline{
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 58px;
+    color: var(--ft-light-brown);
+}
+.fertolio-cta-tagline{
+    line-height: 32px;
+    margin-bottom: 14px;
+    color: var(--ft-white);
+}
+
+
+
+/*
+*  Footer
+*/
+.fertolio-footer{
+    background: var(--ft-dark-blue);
+    padding: 1.5rem;
+}
+.fertolio-footer-media{
+    text-align: center;
+}
+.fertolio-social i{
+    width: 22px;
+    margin: 0 12px;
+    color: var(--ft-white);
+    font-size: 26px;
+    transition: all .50s;
+}
+.fertolio-social i:hover{
+    color: var(--ft-light-brown);
+    transition: all .50s;
+}
+.fertolio-footer-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+}
+.fertolio-footer-menu li{
+    margin: 0 14px;
+}
+.fertolio-footer-menu li a{
+    font-size: .875em;
+    color: var(--ft-white);
+    transition: all .50s;
+}
+.fertolio-footer-menu li a:hover{
+    transition: all .50s;
+    color: var(--ft-light-brown);
+}
+.footer-divider{
+    height: 1px;
+    width: 100%;
+    background: var(--ft-white);
+    margin: 22px 0;
+    opacity: .2;
+}
+.fertolio-footer-attribution{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fertolio-footer-copyright{
+    font-family: 'Nunito Sans',sans-serif;
+    margin-bottom: 0px;
+    font-size: .875em;
+    color: var(--ft-white);
+}
+.fertolio-footer-btt{
+    display: flex;
+    align-items: center;
+    font-size: .875em;
+    color: var(--ft-white);
+    transition: all .50s;
+}
+.fertolio-footer-btt:hover{
+    transition: all .50s;
+    color: var(--ft-light-brown);
+}
+.fertolio-footer-btt .chevron-up-icon{
+    margin-right: 6px;
+}
+
+
+
+/*
+ *  Responsive Design
+ */
+@media screen and (max-width: 1023px){
+    .navbar-menu {
+        position: absolute;
+        width: 100%;
+        padding: 0rem 0rem;
+    }
+    .navbar-end .navbar-item, .navbar-link{
+        padding: .75rem 1rem;
+    }
+    .fertolio-hero-headline{
+        font-size: 3.950em;
+        line-height: 84px;
+    }
+
+    .fertolio-content-about-mr{
+        margin-right: 0;
+    }
+    .fertolio-about-photo{
+        align-items: center;
+    }
+    .fertolio-content-about-ml{
+        margin-left: 0;
+    }
+
+    .fertolio-portfolio-content .fertolio-portfolio-name{
+        font-size: 14px;
+    }
+    .fertolio-portfolio-content .fertolio-portfolio-tag{
+        font-size: 12px;
+    }
+    .fertolio-portfolio-content .fertolio-portfolio-view{
+        font-size: 10px;
+    }
+}
+@media (min-width: 360px) and (max-width: 768px){
+    .hero.is-dark.is-fullheight.fertolio-hero{
+        min-height: 93vh;
+    }
+    .fertolio-hero-content{
+        text-align: center;
+    }
+    .fertolio-hero-cta{
+        justify-content: center;
+    }
+
+    .fertolio-content-about-mr{
+        margin-right: 0;
+        flex-direction: row;
+        text-align: left;
+    }
+    .fertolio-content-about-ml{
+        margin-left: 0;
+    }
+    .fertolio-content-about .content-about-icon{
+        margin: 0px;
+        padding-right: 8px;
+    }
+    .tile.is-vertical>.tile.is-child:not(:last-child){
+        margin-bottom: 1.5rem !important;
+    }
+
+    .fertolio-footer-copyright{
+        margin-bottom: 6px;
+    }
+    .fertolio-footer-attribution{
+        flex-direction: column;
+    }
+}
